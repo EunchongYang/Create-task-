@@ -1,7 +1,7 @@
 
 classschedule = {}
 
-def scheduleyourclass(classschedule):
+def addclass(classschedule):
     classname = input("Enter your class name: ")
     day = input("What day(s) do you have this class (e.g., Tuesday): ")
     time = input("Enter the time (e.g., 11:00 AM): ")
@@ -32,7 +32,7 @@ def manageschedule(classschedule):
         choice = input("Enter your choice (1/2/3/4): ")
 
         if choice == '1':
-            scheduleyourclass(classschedule)
+            addclass(classschedule)
         elif choice == '2':
             deleteclass(classschedule)
         elif choice == '3':
